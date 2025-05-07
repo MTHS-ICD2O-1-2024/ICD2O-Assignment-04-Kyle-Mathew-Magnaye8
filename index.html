@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -16,3 +16,57 @@
   <link rel="manifest" href="site.webmanifest" />
   <title>Medicine Dosage Calculator, in Javascript</title>
 </head>
+
+<body>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script defer src="./js/script.js"></script>
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Medicine Dosage Calculator, in Javascript</span>
+      </div>
+    </header>
+
+    
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <div class="content-wrapper">
+          <!-- Form section on the left -->
+          <div class="form-section">
+            <h5>Select the dosage of the medicine:</h5>
+            <label><input type="radio" name="size" value="small" /> Dosage (100mg, $3.50)</label><br />
+            <label><input type="radio" name="size" value="medium" /> Dosage (250mg, $6.50)</label><br />
+            <label><input type="radio" name="size" value="large" /> Dosage (500mg, $10.00)</label><br /><br />
+        
+            <h5>Select additional options (optional):</h5>
+            <label><input type="radio" name="toppings" value="none" /> None ($0.00)</label><br />
+            <label><input type="radio" name="toppings" value="1" /> Extra Ingredient (Vitamin C) (+$1.50)</label><br />
+            <label><input type="radio" name="toppings" value="2" /> Extra Ingredient (Zinc) (+$2.50)</label><br />
+            <label><input type="radio" name="toppings" value="3" /> Extra Ingredient (Probiotic) (+$3.50)</label><br /><br />
+        
+            <button onclick="calculatePurchase()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+              CALCULATE
+            </button>
+          </div>
+
+            <div id="result-output"></div>
+
+            <div class="content-wrapper">
+              <div class="form-section">
+              </div>
+            
+              <div class="image-section">
+                <img src="./images/istockphoto-1390000459-612x612.jpg" alt="dosage image" />
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html> 

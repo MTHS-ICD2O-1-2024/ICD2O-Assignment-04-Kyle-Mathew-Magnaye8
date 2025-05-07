@@ -1,4 +1,97 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
-* This file contains the CSS for index.html
-*/
+/* Created by: Kyle Matthew Magnaye
+ * Created on: May 2025
+ * This file contains the CSS for index.html
+ */
+
+body {
+  background: lightblue;
+}
+
+.mdl-layout__header-row {
+  justify-content: center;
+  padding: 0;
+}
+
+.mdl-layout__content {
+  padding: 15pt;
+}
+
+.mdl-textfield__error {
+  color: lightgreen;
+}
+
+.page-content {
+  padding: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+  color: rgb(186, 34, 34);
+  text-align: center;
+}
+
+/* Container that wraps form and image */
+.content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  /* Aligns content to the left */
+  align-items: flex-start;
+  /* Aligns both items to the top */
+  gap: 40px;
+  /* Space between form and image */
+  flex-wrap: wrap;
+  /* Allows wrapping in smaller screens */
+}
+
+/* Form section on the left */
+.form-section {
+  flex: 1;
+  min-width: 300px;
+  /* Prevents form from being too small */
+  text-align: left;
+  /* Align text to the left */
+}
+
+/* Image section on the right */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  /* Aligns image to the right */
+  min-width: 300px;
+  /* Prevents image from being too small */
+}
+
+/* Controls image size */
+.image-section img {
+  height: 250px;
+  max-width: 100%;
+  object-fit: contain;
+  /* Ensures the image fits proportionally */
+}
+/* Menu Drawer */
+.mdl-layout__drawer {
+  width: 240px;
+  background-color: #6200ea;
+  color: white;
+}
+
+/* Navigation Links */
+.mdl-navigation__link {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.mdl-navigation__link:hover {
+  background-color: #3700b3;
+}
+
+/* Mobile Menu Button */
+#menu-toggle {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 999;
+  background-color: transparent;
+  border: none;
+}
