@@ -21,7 +21,7 @@ const TOPPING_COSTS = {
 };  
 
 // Tax rate
-const TAX_RATE = 0.12;
+const TAX_RATE = 0.13;
 
 // Function to calculate the purchase cost
 function calculatePurchase() {
